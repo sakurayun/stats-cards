@@ -1,8 +1,8 @@
 const { constructItem, render } = require('./common');
 
 function renderBilibiliCard(data) {
-  let { name, description, following, fans, likes, level, views, theme } = data;
-  let lengthLimit = 14;
+  let { description, theme } = data;
+  let lengthLimit = 3;
   if (description.length > lengthLimit) {
     description = description.substr(0, lengthLimit);
     description += '...';
